@@ -13,4 +13,6 @@ set(CMAKE_C_EXTENSIONS OFF)
 
 project ("hotstuff")
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/third_party/abc/include)
+
 # Include sub-projects.

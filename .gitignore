@@ -34,3 +34,5 @@
 # CLion
 .idea
 build-*
+cmake-build*
+
