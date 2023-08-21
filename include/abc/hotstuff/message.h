@@ -6,18 +6,19 @@
 
 #pragma once
 
-#include <message_type.h>
+#include <abc/fixed_bytes.h>
+#include <abc/hotstuff/message_type.h>
 
 #include <cstdint>
 
-namespace abc {
+namespace abc::hotstuff {
 
-struct w_message_struct {
+struct message {
     uint64_t view_number{ 0 };
+    bytes32_t justification_hash{};
+    bytes32_t signature{};
     message_type type{ message_type::invalid };
-
 };
-using wmessage_t = w_message_struct;
 
 }
 

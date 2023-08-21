@@ -8,7 +8,7 @@
 
 #include <cstdint>
 
-namespace abc {
+namespace abc::hotstuff {
 
 enum class message_type : uint8_t {
     invalid = 0,
